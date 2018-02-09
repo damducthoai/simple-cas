@@ -22,10 +22,6 @@ public class User implements Serializable {
     @Column(name = "user_password")
     String password;
 
-    /*@OneToOne(cascade = {CascadeType.REMOVE})
-    @JoinColumn(name = "user_id")
-    UserProfile profile;*/
-
     public User(String email, String password) {
         this.email = email;
         this.password = password;
